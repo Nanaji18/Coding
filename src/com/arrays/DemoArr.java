@@ -3,6 +3,7 @@ package com.arrays;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 public class DemoArr {
 	
@@ -12,9 +13,11 @@ public class DemoArr {
 		
 		List<Integer> num=Arrays.asList(arr);
 		
-		int max=num.stream().min(Comparator.naturalOrder()).get();
-		
-		System.out.println(max);
+		Optional<Integer> max=num.stream().min(Comparator.naturalOrder());
+		if (max.isPresent()) {
+			Integer bn=max.get();
+			System.out.println(bn);
+		}
 	}
 
 }

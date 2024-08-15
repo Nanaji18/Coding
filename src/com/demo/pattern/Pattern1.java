@@ -9,13 +9,13 @@ public class Pattern1 {
 			for (int j = 0; j < 5; j++) {
 				
 				if (i==0||j==0||i==4||j==4) {
-					System.out.print("*");
+					System.out.print("* ");
 				}else {
-					System.out.print(" ");
+					System.out.print("  ");
 				}
 				
 			}
-			System.out.println(" ");
+			System.out.println();
 			
 		}
 	}
