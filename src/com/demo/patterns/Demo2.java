@@ -31,6 +31,7 @@ public class Demo2 {
 		
 		Integer[] arr1={1,5,2,6,3,7,9,4};
 		
+		System.out.println(Arrays.asList(arr1).toString());
 		Deque<Integer> l=new LinkedList<>();
 		
 		for (Integer integer : arr1) {
